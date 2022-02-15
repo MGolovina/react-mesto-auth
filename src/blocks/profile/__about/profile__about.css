@@ -1,0 +1,30 @@
+.profile__about {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 13px;
+  max-width: 336px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;    
+}
+
+@media screen and (max-width: 915px) {
+  .profile__about {
+    font-size: 14px;
+    line-height: 17px;
+    /* text-align: center; */
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .profile__about {
+    margin: 0 auto;
+    max-width: 282px;
+  }
+}

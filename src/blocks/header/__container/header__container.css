@@ -1,0 +1,17 @@
+.header__container {
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px;
+  gap: 24px;
+}
+
+@media screen and (max-width: 550px) {
+  .header__container {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}

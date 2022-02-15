@@ -1,0 +1,23 @@
+.popup__title {
+    margin: 0 0 0 0px;
+    max-width: 330px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29.05px;
+    /* padding-top: 34px;
+    padding-bottom: 54px; */
+    
+ 
+}
+
+  @media screen and (max-width: 475px) {
+    .popup__title {
+      font-size: 18px;
+      line-height: 22px;
+      max-width: 238px;
+      padding-top: 25px;
+      padding-bottom: 75px;
+      margin-left: 22px;
+  }
+}

@@ -1,0 +1,20 @@
+.elements__card-button_trash {
+    background-image: url(../../../../images/Group.svg);
+    background-color: transparent;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    height: 18px;
+    width: 19px;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: .2s;   
+}
+.elements__card-button_trash:hover {
+    opacity: .6;
+    cursor: pointer;
+}
