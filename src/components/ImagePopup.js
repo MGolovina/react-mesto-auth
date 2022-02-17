@@ -1,5 +1,5 @@
 function ImagePopup ({ card, onClose }) {
-  const { name, link } = card || []
+  const { name, link } = card || {}
   return (
     <div className={`popup popup_${name} ${card ? 'popup_opened' : ''}`}>
       <div className="popup__figure-container popup__overlay">
@@ -8,7 +8,7 @@ function ImagePopup ({ card, onClose }) {
             src={link}
             alt={name}
             className="popup__image" />            
-          <div className="popup__figure-caption">{name}</div>
+          <figcaption className="popup__figure-caption">{name}</figcaption>
         </figure>
         <button
           type="button"

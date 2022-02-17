@@ -18,7 +18,7 @@ import ProtectedRoute from "./ProtectedRoute";
 
 function App() {
   const [loggedIn, setIsLoggedIn] = useState(false);
-  const [authorizationUserEmail, setAuthorizationUserEmail] = useState('');
+  const [authorizationUserEmail, setAuthorizationUserEmail] = useState("");
 
   const [cards, setCards] = useState([]);
   const [currentUser, setCurrentUser] = useState({});
@@ -179,13 +179,14 @@ function App() {
     auth
       .register(email, password)
       .then((res) => {
-        setIsInfoToolTipPopupOpen(true);
         setIsLoggedIn(true);
         history.push("/sign-in");
       })
+      .finally(() => {
+        setIsInfoToolTipPopupOpen(true);
+      })
       .catch((err) => {
         console.log(err);
-        setIsInfoToolTipPopupOpen(true);
         setIsLoggedIn(false);
       });
   }
