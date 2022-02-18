@@ -1,6 +1,4 @@
 .login__form {
-  min-height: 100vh;
-  background-color: #000000;
   display: grid;
   justify-items: center;
 }
